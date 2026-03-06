@@ -109,3 +109,12 @@ org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequ
 2026.03.06 12:42:00 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/actor/ReplayJobManagerActor.java
 2026.03.06 12:42:00 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/actor/ReplayJobManagerActor.java. Using fallback presentation compiler.
 2026.03.06 12:42:08 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/actor/ReplayJobManagerActor.java. Using fallback presentation compiler.
+2026.03.06 12:42:43 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/ApiServer.java
+2026.03.06 12:42:44 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/ApiServer.java. Using fallback presentation compiler.
+2026.03.06 12:42:52 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/ApiServer.java
+2026.03.06 12:42:52 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/ApiServer.java. Using fallback presentation compiler.
+2026.03.06 12:42:54 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/ReceiverServer.java
+2026.03.06 12:42:54 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/ApiServer.java. Using fallback presentation compiler.
+2026.03.06 12:42:54 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/ReceiverServer.java. Using fallback presentation compiler.
+2026.03.06 12:43:00 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/ReceiverServer.java. Using fallback presentation compiler.
+2026.03.06 12:43:00 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/ApiServer.java. Using fallback presentation compiler.
