@@ -14,6 +14,7 @@ import org.apache.iceberg.io.FileAppender;
 import org.apache.iceberg.io.CloseableIterable;
 import org.apache.iceberg.io.OutputFile;
 import org.apache.iceberg.parquet.Parquet;
+import org.apache.parquet.schema.MessageType;
 
 import java.io.IOException;
 import java.time.Instant;
@@ -106,7 +107,7 @@ public final class IcebergEventStore {
         long recordCount = 0;
         try (FileAppender<Record> appender = Parquet.writeData(outputFile)
                 .schema(schema)
-                .createWriterFunc(GenericParquetWriter::buildWriter)
+                .createWriterFunc((MessageType type) -> GenericParquetWriter.buildWriter(type))
                 .overwrite()
                 .build()) {
             for (SecurityEvent e : events) {
