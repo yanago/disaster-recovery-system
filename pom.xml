@@ -19,7 +19,7 @@
         <pekko.version>1.4.0</pekko.version>
         <iceberg.version>1.10.1</iceberg.version>
         <kafka.clients.version>4.2.0</kafka.clients.version>
-        <jackson.version>2.21.1</jackson.version>
+        <jackson.version>2.21.0</jackson.version>
         <logback.version>1.5.32</logback.version>
         <hadoop.version>3.4.3</hadoop.version>
     </properties>
@@ -51,11 +51,6 @@
         <dependency>
             <groupId>org.apache.iceberg</groupId>
             <artifactId>iceberg-data</artifactId>
-            <version>${iceberg.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.iceberg</groupId>
-            <artifactId>iceberg-hadoop</artifactId>
             <version>${iceberg.version}</version>
         </dependency>
         <dependency>
