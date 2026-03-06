@@ -54,3 +54,55 @@ org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequ
 2026.03.06 12:39:23 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergPaths.java. Using fallback presentation compiler.
 2026.03.06 12:39:23 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergCatalogProvider.java. Using fallback presentation compiler.
 2026.03.06 12:39:23 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventTable.java. Using fallback presentation compiler.
+2026.03.06 12:39:34 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventStore.java
+2026.03.06 12:39:34 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventStore.java. Using fallback presentation compiler.
+2026.03.06 12:39:45 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventStore.java. Using fallback presentation compiler.
+2026.03.06 12:39:48 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventTable.java
+2026.03.06 12:39:48 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventTable.java. Using fallback presentation compiler.
+2026.03.06 12:39:48 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventTable.java. Using fallback presentation compiler.
+2026.03.06 12:39:55 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventTable.java
+2026.03.06 12:39:55 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventTable.java. Using fallback presentation compiler.
+2026.03.06 12:39:55 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventTable.java. Using fallback presentation compiler.
+2026.03.06 12:39:55 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventStore.java
+2026.03.06 12:39:55 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventStore.java. Using fallback presentation compiler.
+2026.03.06 12:39:59 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventStore.java
+2026.03.06 12:40:04 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/source/EventCursor.java
+2026.03.06 12:40:04 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/source/EventCursor.java. Using fallback presentation compiler.
+2026.03.06 12:40:08 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventStore.java. Using fallback presentation compiler.
+2026.03.06 12:40:08 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventStore.java. Using fallback presentation compiler.
+2026.03.06 12:40:13 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/util/Json.java
+2026.03.06 12:40:13 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/source/EventCursor.java. Using fallback presentation compiler.
+2026.03.06 12:40:13 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/util/Json.java. Using fallback presentation compiler.
+2026.03.06 12:40:15 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/sink/EventSink.java
+2026.03.06 12:40:15 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/source/EventCursor.java. Using fallback presentation compiler.
+2026.03.06 12:40:15 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/util/Json.java. Using fallback presentation compiler.
+2026.03.06 12:40:15 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/sink/EventSink.java. Using fallback presentation compiler.
+2026.03.06 12:40:17 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventStore.java
+2026.03.06 12:40:17 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/sink/EventSink.java. Using fallback presentation compiler.
+2026.03.06 12:40:17 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/source/EventCursor.java. Using fallback presentation compiler.
+2026.03.06 12:40:17 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/util/Json.java. Using fallback presentation compiler.
+2026.03.06 12:40:18 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventStore.java. Using fallback presentation compiler.
+2026.03.06 12:40:18 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/source/EventCursor.java. Using fallback presentation compiler.
+2026.03.06 12:40:18 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/util/Json.java. Using fallback presentation compiler.
+2026.03.06 12:40:18 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/sink/EventSink.java. Using fallback presentation compiler.
+2026.03.06 12:40:21 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/sink/KafkaEventSink.java
+2026.03.06 12:40:21 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/sink/KafkaEventSink.java. Using fallback presentation compiler.
+2026.03.06 12:40:26 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/sink/KafkaEventSink.java. Using fallback presentation compiler.
+2026.03.06 12:40:27 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/sink/RestEventSink.java
+2026.03.06 12:40:27 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/sink/RestEventSink.java. Using fallback presentation compiler.
+2026.03.06 12:40:27 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/sink/KafkaEventSink.java. Using fallback presentation compiler.
+2026.03.06 12:40:30 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/util/Json.java
+2026.03.06 12:40:30 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/sink/KafkaEventSink.java. Using fallback presentation compiler.
+2026.03.06 12:40:30 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/sink/RestEventSink.java. Using fallback presentation compiler.
+2026.03.06 12:40:30 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/util/Json.java. Using fallback presentation compiler.
+2026.03.06 12:40:30 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/util/Json.java. Using fallback presentation compiler.
+2026.03.06 12:40:32 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/sink/KafkaEventSink.java. Using fallback presentation compiler.
+2026.03.06 12:40:53 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/sink/KafkaEventSink.java. Using fallback presentation compiler.
+2026.03.06 12:40:53 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/sink/RestEventSink.java. Using fallback presentation compiler.
+2026.03.06 12:40:53 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/util/Json.java. Using fallback presentation compiler.
+2026.03.06 12:40:56 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/sink/EventSinkFactory.java
+2026.03.06 12:40:56 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/sink/EventSinkFactory.java. Using fallback presentation compiler.
+2026.03.06 12:41:01 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/sink/EventSinkFactory.java. Using fallback presentation compiler.
+2026.03.06 12:41:28 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/actor/ReplayJobActor.java
+2026.03.06 12:41:28 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/actor/ReplayJobActor.java. Using fallback presentation compiler.
+2026.03.06 12:41:32 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/actor/ReplayJobActor.java. Using fallback presentation compiler.
