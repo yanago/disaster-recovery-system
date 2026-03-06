@@ -10,11 +10,10 @@ import org.apache.iceberg.data.Record;
 import org.apache.iceberg.data.parquet.GenericParquetWriter;
 import org.apache.iceberg.expressions.Expression;
 import org.apache.iceberg.expressions.Expressions;
-import org.apache.iceberg.io.FileAppender;
 import org.apache.iceberg.io.CloseableIterable;
+import org.apache.iceberg.io.DataWriter;
 import org.apache.iceberg.io.OutputFile;
 import org.apache.iceberg.parquet.Parquet;
-import org.apache.parquet.schema.MessageType;
 
 import java.io.IOException;
 import java.time.Instant;
@@ -104,10 +103,10 @@ public final class IcebergEventStore {
         String filePath = table.location() + "/data/" + fileName + ".parquet";
         OutputFile outputFile = table.io().newOutputFile(filePath);
 
-        long recordCount = 0;
-        try (FileAppender<Record> appender = Parquet.writeData(outputFile)
+        DataFile dataFile;
+        try (DataWriter<Record> writer = Parquet.writeData(outputFile)
                 .schema(schema)
-                .createWriterFunc((MessageType type) -> GenericParquetWriter.buildWriter(type))
+                .createWriterFunc(GenericParquetWriter::buildWriter)
                 .overwrite()
                 .build()) {
             for (SecurityEvent e : events) {
@@ -117,26 +116,12 @@ public final class IcebergEventStore {
                 rec.setField(IcebergEventTable.FIELD_EVENT_TIME, e.getEventTime());
                 rec.setField(IcebergEventTable.FIELD_EVENT_TYPE, e.getEventType());
                 rec.setField(IcebergEventTable.FIELD_EVENT_ID, e.getEventId());
-                appender.add(rec);
-                recordCount++;
+                writer.write(rec);
             }
+            dataFile = writer.toDataFile();
         } catch (IOException ex) {
             throw new RuntimeException("Failed to write parquet data file for Iceberg table", ex);
         }
-
-        long fileSize;
-        try {
-            fileSize = outputFile.toInputFile().getLength();
-        } catch (IOException e) {
-            throw new RuntimeException("Failed to stat Iceberg data file size", e);
-        }
-
-        DataFile dataFile = DataFiles.builder(spec)
-                .withPath(filePath)
-                .withFormat(FileFormat.PARQUET)
-                .withFileSizeInBytes(fileSize)
-                .withRecordCount(recordCount)
-                .build();
 
         table.newAppend()
                 .appendFile(dataFile)
