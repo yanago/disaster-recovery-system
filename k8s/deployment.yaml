@@ -1,0 +1,74 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: disaster-recovery-replay
+  labels:
+    app: disaster-recovery-replay
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: disaster-recovery-replay
+  template:
+    metadata:
+      labels:
+        app: disaster-recovery-replay
+    spec:
+      containers:
+        - name: replay
+          image: disaster-recovery-system:0.1.0-SNAPSHOT
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8080
+            - name: receiver
+              containerPort: 9090
+          env:
+            - name: HTTP_PORT
+              value: "8080"
+            - name: RECEIVER_PORT
+              value: "9090"
+            - name: WAREHOUSE_PATH
+              value: /data/warehouse
+            - name: INIT_DEMO_DATA
+              value: "true"
+            - name: DEMO_EVENTS
+              value: "50000"
+            - name: ENABLE_RECEIVER
+              value: "true"
+          volumeMounts:
+            - name: warehouse
+              mountPath: /data/warehouse
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 30
+            periodSeconds: 10
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 10
+            periodSeconds: 5
+      volumes:
+        - name: warehouse
+          emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: disaster-recovery-replay
+  labels:
+    app: disaster-recovery-replay
+spec:
+  type: ClusterIP
+  ports:
+    - name: http
+      port: 8080
+      targetPort: 8080
+    - name: receiver
+      port: 9090
+      targetPort: 9090
+  selector:
+    app: disaster-recovery-replay
