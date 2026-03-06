@@ -29,10 +29,9 @@ public final class IcebergEventTable {
     }
 
     public static PartitionSpec spec(Schema schema) {
-        // Keep partitions simple and demo-friendly. Partitioning by cid is a natural scaling knob.
-        return PartitionSpec.builderFor(schema)
-                .identity(FIELD_CID)
-                .build();
+        // Unpartitioned keeps demo writes trivial and predictable.
+        // (Partitioning can be added later; it requires writing files that respect partition values.)
+        return PartitionSpec.unpartitioned();
     }
 
     public static TableIdentifier parseTableId(String table) {

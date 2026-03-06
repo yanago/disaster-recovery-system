@@ -11,6 +11,7 @@ import org.apache.iceberg.data.parquet.GenericParquetWriter;
 import org.apache.iceberg.expressions.Expression;
 import org.apache.iceberg.expressions.Expressions;
 import org.apache.iceberg.io.FileAppender;
+import org.apache.iceberg.io.CloseableIterable;
 import org.apache.iceberg.io.OutputFile;
 import org.apache.iceberg.parquet.Parquet;
 import org.apache.iceberg.util.UUIDUtil;
@@ -21,6 +22,7 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
+import com.disasterrecovery.source.EventCursor;
 
 public final class IcebergEventStore {
 
@@ -122,9 +124,17 @@ public final class IcebergEventStore {
             throw new RuntimeException("Failed to write parquet data file for Iceberg table", ex);
         }
 
+        long fileSize;
+        try {
+            fileSize = outputFile.toInputFile().getLength();
+        } catch (IOException e) {
+            throw new RuntimeException("Failed to stat Iceberg data file size", e);
+        }
+
         DataFile dataFile = DataFiles.builder(spec)
                 .withPath(filePath)
                 .withFormat(FileFormat.PARQUET)
+                .withFileSizeInBytes(fileSize)
                 .withRecordCount(recordCount)
                 .build();
 
@@ -181,6 +191,30 @@ public final class IcebergEventStore {
             @Override
             public SecurityEvent next() {
                 return toEvent(it.next());
+            }
+        };
+    }
+
+    public EventCursor openCursor(Table table, Expression filter) {
+        CloseableIterable<Record> iterable = scan(table, filter);
+        Iterator<Record> it = iterable.iterator();
+        return new EventCursor() {
+            @Override
+            public boolean hasNext() {
+                return it.hasNext();
+            }
+
+            @Override
+            public SecurityEvent next() {
+                return toEvent(it.next());
+            }
+
+            @Override
+            public void close() {
+                try {
+                    iterable.close();
+                } catch (IOException ignored) {
+                }
             }
         };
     }
