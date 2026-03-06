@@ -137,3 +137,51 @@ org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequ
 2026.03.06 13:00:01 INFO  Memory monitor stopped
 2026.03.06 13:00:01 INFO  shutting down Metals
 2026.03.06 13:00:01 INFO  Exiting server
+2026.03.06 14:00:26 INFO  Started: Metals version 1.6.6 in folders '/Users/vaskoyordanov/disaster-recovery-system' for client Cursor 1.105.1.
+2026.03.06 14:00:26 INFO  Memory monitor started
+2026.03.06 14:00:26 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.03.06 14:00:27 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/SecurityEvent.java. Using fallback presentation compiler.
+2026.03.06 14:00:27 INFO  skipping build import with status 'Dismissed'
+2026.03.06 14:00:27 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/SecurityEvent.java
+2026.03.06 14:00:27 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/SecurityEvent.java. Using fallback presentation compiler.
+2026.03.06 14:00:28 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayJobState.java
+2026.03.06 14:00:28 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayJobState.java. Using fallback presentation compiler.
+2026.03.06 14:00:28 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/SecurityEvent.java. Using fallback presentation compiler.
+2026.03.06 14:00:29 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayDestinationType.java
+2026.03.06 14:00:29 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayJobState.java. Using fallback presentation compiler.
+2026.03.06 14:00:29 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/SecurityEvent.java. Using fallback presentation compiler.
+2026.03.06 14:00:29 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayDestinationType.java. Using fallback presentation compiler.
+2026.03.06 14:00:38 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayJobConfig.java
+2026.03.06 14:00:38 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/SecurityEvent.java. Using fallback presentation compiler.
+2026.03.06 14:00:38 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayJobState.java. Using fallback presentation compiler.
+2026.03.06 14:00:38 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayDestinationType.java. Using fallback presentation compiler.
+2026.03.06 14:00:39 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayJobConfig.java. Using fallback presentation compiler.
+2026.03.06 14:00:52 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayJobMetrics.java
+2026.03.06 14:00:52 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayJobState.java. Using fallback presentation compiler.
+2026.03.06 14:00:52 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/SecurityEvent.java. Using fallback presentation compiler.
+2026.03.06 14:00:52 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayJobMetrics.java. Using fallback presentation compiler.
+2026.03.06 14:00:52 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayJobConfig.java. Using fallback presentation compiler.
+2026.03.06 14:00:52 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayDestinationType.java. Using fallback presentation compiler.
+2026.03.06 14:01:04 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/dto/CreateReplayJobRequest.java
+2026.03.06 14:01:04 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayJobState.java. Using fallback presentation compiler.
+2026.03.06 14:01:04 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/SecurityEvent.java. Using fallback presentation compiler.
+2026.03.06 14:01:04 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayJobConfig.java. Using fallback presentation compiler.
+2026.03.06 14:01:04 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayJobMetrics.java. Using fallback presentation compiler.
+2026.03.06 14:01:04 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayDestinationType.java. Using fallback presentation compiler.
+2026.03.06 14:01:04 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/SecurityEvent.java. Using fallback presentation compiler.
+2026.03.06 14:01:04 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayJobState.java. Using fallback presentation compiler.
+2026.03.06 14:01:04 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayDestinationType.java. Using fallback presentation compiler.
+2026.03.06 14:01:04 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayJobConfig.java. Using fallback presentation compiler.
+2026.03.06 14:01:04 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/model/ReplayJobMetrics.java. Using fallback presentation compiler.
+2026.03.06 14:01:04 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/dto/CreateReplayJobRequest.java. Using fallback presentation compiler.
+2026.03.06 14:01:11 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/dto/CreateReplayJobRequest.java. Using fallback presentation compiler.
+2026.03.06 14:01:12 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/dto/ReplayJobSummary.java
+2026.03.06 14:01:12 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/dto/ReplayJobSummary.java. Using fallback presentation compiler.
+2026.03.06 14:01:14 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/dto/ReplayJobSummary.java. Using fallback presentation compiler.
+2026.03.06 14:01:16 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/dto/ReplayJobDetailResponse.java
+2026.03.06 14:01:16 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/dto/ReplayJobDetailResponse.java. Using fallback presentation compiler.
+2026.03.06 14:01:17 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/dto/ErrorResponse.java
+2026.03.06 14:01:16 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/dto/ErrorResponse.java. Using fallback presentation compiler.
+2026.03.06 14:01:17 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/dto/ReplayJobDetailResponse.java. Using fallback presentation compiler.
+2026.03.06 14:01:19 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/dto/ErrorResponse.java. Using fallback presentation compiler.
+2026.03.06 14:01:19 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/api/dto/ReplayJobDetailResponse.java. Using fallback presentation compiler.
