@@ -17,7 +17,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <pekko.version>1.4.0</pekko.version>
-        <iceberg.version>1.10.1</iceberg.version>
+        <iceberg.version>1.7.2</iceberg.version>
         <kafka.clients.version>4.2.0</kafka.clients.version>
         <jackson.version>2.17.2</jackson.version>
         <logback.version>1.5.32</logback.version>

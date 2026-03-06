@@ -48,7 +48,7 @@ public final class Main {
         }
 
         CompletableFuture<ActorRef<ReplayJobManagerActor.Command>> managerFuture = new CompletableFuture<>();
-        var guardian = Behaviors.<Init>setUp(ctx ->
+        var guardian = Behaviors.<Init>setup(ctx ->
                 Behaviors.receive(Init.class)
                         .onMessage(Init.class, init -> {
                             ActorRef<ReplayJobManagerActor.Command> ref =
