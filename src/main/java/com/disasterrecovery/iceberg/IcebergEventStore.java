@@ -144,6 +144,10 @@ public final class IcebergEventStore {
     }
 
     public void generateDemoData(Table table, int eventsCount, int batchSize) {
+        generateDemoData(table, eventsCount, batchSize, 0);
+    }
+
+    public void generateDemoData(Table table, int eventsCount, int batchSize, long startIndex) {
         int safeBatch = Math.max(1, batchSize);
         int total = Math.max(0, eventsCount);
 
@@ -153,7 +157,8 @@ public final class IcebergEventStore {
 
         List<SecurityEvent> batch = new ArrayList<>(safeBatch);
         for (int i = 0; i < total; i++) {
-            long eventTime = base + (i * 25L); // spaced; makes throttling demo visible
+            long idx = startIndex + i;
+            long eventTime = base + (idx * 25L); // spaced; makes throttling demo visible
             Instant ts = Instant.ofEpochMilli(eventTime);
             String cid = cids[i % cids.length];
             String type = types[i % types.length];
