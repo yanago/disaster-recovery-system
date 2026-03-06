@@ -106,3 +106,6 @@ org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequ
 2026.03.06 12:41:28 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/actor/ReplayJobActor.java
 2026.03.06 12:41:28 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/actor/ReplayJobActor.java. Using fallback presentation compiler.
 2026.03.06 12:41:32 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/actor/ReplayJobActor.java. Using fallback presentation compiler.
+2026.03.06 12:42:00 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/actor/ReplayJobManagerActor.java
+2026.03.06 12:42:00 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/actor/ReplayJobManagerActor.java. Using fallback presentation compiler.
+2026.03.06 12:42:08 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/actor/ReplayJobManagerActor.java. Using fallback presentation compiler.
