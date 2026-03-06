@@ -58,6 +58,11 @@
             <artifactId>iceberg-parquet</artifactId>
             <version>${iceberg.version}</version>
         </dependency>
+        <dependency>
+            <groupId>org.apache.parquet</groupId>
+            <artifactId>parquet-avro</artifactId>
+            <version>1.14.0</version>
+        </dependency>
 
         <!-- Hadoop common for local filesystem-backed Iceberg catalog -->
         <dependency>

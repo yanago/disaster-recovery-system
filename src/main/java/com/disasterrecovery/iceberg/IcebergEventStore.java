@@ -14,7 +14,6 @@ import org.apache.iceberg.io.FileAppender;
 import org.apache.iceberg.io.CloseableIterable;
 import org.apache.iceberg.io.OutputFile;
 import org.apache.iceberg.parquet.Parquet;
-import org.apache.iceberg.util.UUIDUtil;
 
 import java.io.IOException;
 import java.time.Instant;
@@ -98,8 +97,8 @@ public final class IcebergEventStore {
         PartitionSpec spec = table.spec();
 
         String fileName = (dataFileNameHint == null || dataFileNameHint.isBlank())
-                ? UUIDUtil.randomUUID().toString()
-                : dataFileNameHint.trim() + "-" + UUIDUtil.randomUUID();
+                ? java.util.UUID.randomUUID().toString()
+                : dataFileNameHint.trim() + "-" + java.util.UUID.randomUUID();
 
         String filePath = table.location() + "/data/" + fileName + ".parquet";
         OutputFile outputFile = table.io().newOutputFile(filePath);

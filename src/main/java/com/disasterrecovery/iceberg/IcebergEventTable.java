@@ -51,11 +51,7 @@ public final class IcebergEventTable {
     }
 
     public static void ensureNamespace(Catalog catalog, Namespace ns) {
-        try {
-            catalog.createNamespace(ns);
-        } catch (Exception ignored) {
-            // Namespace already exists or catalog doesn't support namespaces; ignore for demo.
-        }
+        // HadoopCatalog does not expose createNamespace; table creation will create parent path.
     }
 }
 

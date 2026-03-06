@@ -13,8 +13,10 @@ import org.apache.pekko.actor.typed.ActorSystem;
 import org.apache.pekko.actor.typed.javadsl.Behaviors;
 
 import java.time.Duration;
+import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+import java.util.concurrent.TimeUnit;
 
 public final class Main {
 
@@ -45,9 +47,19 @@ public final class Main {
             }
         }
 
-        ActorSystem<Void> system = ActorSystem.create(Behaviors.empty(), "disaster-recovery-replay");
-        ActorRef<ReplayJobManagerActor.Command> manager =
-                system.systemActorOf(ReplayJobManagerActor.create(store, blockingIo), "job-manager");
+        CompletableFuture<ActorRef<ReplayJobManagerActor.Command>> managerFuture = new CompletableFuture<>();
+        var guardian = Behaviors.<Init>setUp(ctx ->
+                Behaviors.receive(Init.class)
+                        .onMessage(Init.class, init -> {
+                            ActorRef<ReplayJobManagerActor.Command> ref =
+                                    ctx.spawn(ReplayJobManagerActor.create(store, blockingIo), "job-manager");
+                            init.future.complete(ref);
+                            return Behaviors.same();
+                        })
+                        .build());
+        ActorSystem<Init> system = ActorSystem.create(guardian, "disaster-recovery-replay");
+        system.tell(new Init(managerFuture));
+        ActorRef<ReplayJobManagerActor.Command> manager = managerFuture.get(apiTimeout.toSeconds() + 2, TimeUnit.SECONDS);
 
         ApiServer api = new ApiServer(system, manager, httpPort, apiTimeout);
         api.start();
@@ -83,5 +95,7 @@ public final class Main {
         // Keep running.
         system.getWhenTerminated().toCompletableFuture().join();
     }
+
+    private record Init(CompletableFuture<ActorRef<ReplayJobManagerActor.Command>> future) {}
 }
 

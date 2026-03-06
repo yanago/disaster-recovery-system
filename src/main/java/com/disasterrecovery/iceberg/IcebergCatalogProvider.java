@@ -1,7 +1,6 @@
 package com.disasterrecovery.iceberg;
 
 import org.apache.hadoop.conf.Configuration;
-import org.apache.hadoop.fs.Path;
 import org.apache.iceberg.catalog.Catalog;
 import org.apache.iceberg.hadoop.HadoopCatalog;
 
@@ -18,7 +17,8 @@ public final class IcebergCatalogProvider {
         // Local filesystem for demo; in k8s this is backed by a PV mount.
         conf.set("fs.defaultFS", "file:///");
 
-        HadoopCatalog catalog = new HadoopCatalog(conf, new Path(IcebergPaths.warehousePath().toString()));
+        String warehousePath = IcebergPaths.warehousePath().toString();
+        HadoopCatalog catalog = new HadoopCatalog(conf, warehousePath);
 
         // Keep this around so future catalog types (REST, Nessie) can be swapped in.
         Map<String, String> props = new HashMap<>();
