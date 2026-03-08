@@ -281,3 +281,9 @@ org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequ
 2026.03.08 15:32:34 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventStore.java
 2026.03.08 15:32:35 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventStore.java. Using fallback presentation compiler.
 2026.03.08 15:32:36 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventStore.java. Using fallback presentation compiler.
+2026.03.08 15:34:26 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventStore.java
+2026.03.08 15:34:26 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventStore.java. Using fallback presentation compiler.
+2026.03.08 15:34:27 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventStore.java. Using fallback presentation compiler.
+2026.03.08 15:34:29 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventStore.java
+2026.03.08 15:34:29 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventStore.java. Using fallback presentation compiler.
+2026.03.08 15:34:30 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergEventStore.java. Using fallback presentation compiler.
