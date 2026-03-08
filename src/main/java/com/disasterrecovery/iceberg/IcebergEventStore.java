@@ -106,7 +106,7 @@ public final class IcebergEventStore {
         DataFile dataFile;
         try (DataWriter<Record> writer = Parquet.writeData(outputFile)
                 .schema(schema)
-                .spec(spec)
+                .withSpec(spec)
                 .createWriterFunc(GenericParquetWriter::buildWriter)
                 .overwrite()
                 .build()) {
