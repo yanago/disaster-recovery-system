@@ -248,3 +248,14 @@ org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequ
 2026.03.08 15:23:41 INFO  Memory monitor stopped
 2026.03.08 15:23:41 INFO  shutting down Metals
 2026.03.08 15:23:41 INFO  Exiting server
+2026.03.08 15:26:02 INFO  Started: Metals version 1.6.6 in folders '/Users/vaskoyordanov/disaster-recovery-system' for client Cursor 1.105.1.
+2026.03.08 15:26:02 INFO  Memory monitor started
+2026.03.08 15:26:02 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.03.08 15:26:03 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergCatalogProvider.java. Using fallback presentation compiler.
+2026.03.08 15:26:03 INFO  skipping build import with status 'Dismissed'
+2026.03.08 15:26:03 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergCatalogProvider.java
+2026.03.08 15:26:03 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergCatalogProvider.java. Using fallback presentation compiler.
+2026.03.08 15:26:04 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergCatalogProvider.java. Using fallback presentation compiler.
+2026.03.08 15:26:08 WARN  no build target for: /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergCatalogProvider.java
+2026.03.08 15:26:08 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergCatalogProvider.java. Using fallback presentation compiler.
+2026.03.08 15:26:09 INFO  no build target found for /Users/vaskoyordanov/disaster-recovery-system/src/main/java/com/disasterrecovery/iceberg/IcebergCatalogProvider.java. Using fallback presentation compiler.
