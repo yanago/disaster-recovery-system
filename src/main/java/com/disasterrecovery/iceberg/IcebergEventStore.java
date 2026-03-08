@@ -17,6 +17,8 @@ import org.apache.iceberg.parquet.Parquet;
 
 import java.io.IOException;
 import java.time.Instant;
+import java.time.OffsetDateTime;
+import java.time.ZoneOffset;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
@@ -81,7 +83,8 @@ public final class IcebergEventStore {
 
     public SecurityEvent toEvent(Record r) {
         String cid = (String) r.getField(IcebergEventTable.FIELD_CID);
-        Instant ts = (Instant) r.getField(IcebergEventTable.FIELD_EVENT_TIMESTAMP);
+        Object tsObj = r.getField(IcebergEventTable.FIELD_EVENT_TIMESTAMP);
+        Instant ts = tsObj instanceof OffsetDateTime ? ((OffsetDateTime) tsObj).toInstant() : (Instant) tsObj;
         Long eventTime = (Long) r.getField(IcebergEventTable.FIELD_EVENT_TIME);
         String type = (String) r.getField(IcebergEventTable.FIELD_EVENT_TYPE);
         String id = (String) r.getField(IcebergEventTable.FIELD_EVENT_ID);
@@ -113,7 +116,7 @@ public final class IcebergEventStore {
             for (SecurityEvent e : events) {
                 GenericRecord rec = GenericRecord.create(schema);
                 rec.setField(IcebergEventTable.FIELD_CID, e.getCid());
-                rec.setField(IcebergEventTable.FIELD_EVENT_TIMESTAMP, e.getEventTimestamp());
+                rec.setField(IcebergEventTable.FIELD_EVENT_TIMESTAMP, e.getEventTimestamp().atOffset(ZoneOffset.UTC));
                 rec.setField(IcebergEventTable.FIELD_EVENT_TIME, e.getEventTime());
                 rec.setField(IcebergEventTable.FIELD_EVENT_TYPE, e.getEventType());
                 rec.setField(IcebergEventTable.FIELD_EVENT_ID, e.getEventId());
