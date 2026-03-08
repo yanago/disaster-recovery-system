@@ -1,9 +1,9 @@
 {
   "format-version" : 2,
-  "table-uuid" : "5596529d-4e07-4761-b98e-348cd4eda32c",
+  "table-uuid" : "8885e3e7-fae5-4dd1-9bf3-83f16e8bebf6",
   "location" : "/Users/vaskoyordanov/disaster-recovery-system/local-warehouse/security/events",
   "last-sequence-number" : 0,
-  "last-updated-ms" : 1772998151825,
+  "last-updated-ms" : 1772998314462,
   "last-column-id" : 5,
   "current-schema-id" : 0,
   "schemas" : [ {
