@@ -1,0 +1,60 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "5596529d-4e07-4761-b98e-348cd4eda32c",
+  "location" : "/Users/vaskoyordanov/disaster-recovery-system/local-warehouse/security/events",
+  "last-sequence-number" : 0,
+  "last-updated-ms" : 1772998151825,
+  "last-column-id" : 5,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "cid",
+      "required" : true,
+      "type" : "string"
+    }, {
+      "id" : 2,
+      "name" : "event_timestamp",
+      "required" : true,
+      "type" : "timestamptz"
+    }, {
+      "id" : 3,
+      "name" : "event_time",
+      "required" : true,
+      "type" : "long"
+    }, {
+      "id" : 4,
+      "name" : "event_type",
+      "required" : true,
+      "type" : "string"
+    }, {
+      "id" : 5,
+      "name" : "event_id",
+      "required" : true,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : -1,
+  "refs" : { },
+  "snapshots" : [ ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ ],
+  "metadata-log" : [ ]
+}
