@@ -18,10 +18,10 @@ public final class IcebergCatalogProvider {
         conf.set("fs.defaultFS", "file:///");
 
         String warehousePath = IcebergPaths.warehousePath().toString();
-        HadoopCatalog catalog = new HadoopCatalog(conf, warehousePath);
-
-        // Keep this around so future catalog types (REST, Nessie) can be swapped in.
         Map<String, String> props = new HashMap<>();
+        props.put("warehouse", warehousePath);
+
+        HadoopCatalog catalog = new HadoopCatalog(conf, warehousePath);
         catalog.initialize("hadoop", props);
         return catalog;
     }
