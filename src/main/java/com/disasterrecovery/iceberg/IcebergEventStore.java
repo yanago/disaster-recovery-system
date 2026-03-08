@@ -122,6 +122,7 @@ public final class IcebergEventStore {
                 rec.setField(IcebergEventTable.FIELD_EVENT_ID, e.getEventId());
                 writer.write(rec);
             }
+            writer.close();
             dataFile = writer.toDataFile();
         } catch (IOException ex) {
             throw new RuntimeException("Failed to write parquet data file for Iceberg table", ex);
